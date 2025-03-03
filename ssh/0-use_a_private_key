@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+ssh -i ~/.ssh/school.pub ubuntu@172.30.223.131
