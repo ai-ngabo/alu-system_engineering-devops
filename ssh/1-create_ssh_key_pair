@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#bash script to create private key pair
+
+ssh-keygen -t rsa -b 4096 -f school -N betty -C "Starboy doings"
