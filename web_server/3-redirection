@@ -17,5 +17,5 @@ sudo sed -i '/server_name _;/a \\t# Redirect /redirect_me to another URL\n\trewr
 # Test the Nginx configuration for syntax errors
 sudo nginx -t
 
-# Restart Nginx to apply the changes
+# Restart Nginx
 sudo service nginx restart
