@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Install nginx webserver on a new Ubuntu machine
+
+sudo apt-get update
+sudo apt-get install -y nginx
+
+echo "Holberton School" | sudo tee /var/www/html/index.html
+
+# config redirection
+config_str ="server_name _;\\
+	rewrite ^/redirect_me https://github.com/ai-ngabo/ permanent;"
+sudo sed -i "s|server_name _;|$config_str|" /etc/nginx/sites-available/default
+
+
+sudo nginx -t
+sudo systemctl restart nginx
