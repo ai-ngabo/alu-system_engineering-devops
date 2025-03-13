@@ -1,15 +1,21 @@
 #!/usr/bin/env bash
-# Configuring  Nginx server to redirect /redirect_me page elsewhere.
+# Configuring Nginx server to redirect /redirect_me page elsewhere.
 
+# Update and install Nginx
 sudo apt-get -y update
 sudo apt-get -y install nginx
 
+# Replace default index.html with custom content
 echo "Holberton School" | sudo tee /var/www/html/index.html
 
-# redirection config
-config_str="server_name _;\\
-    rewrite ^/redirect_me https://github.com/Elgibbor/ permanent;"
-sudo sed -i "s|server_name _;|$config_str|" /etc/nginx/sites-available/default
+# Backup the default Nginx configuration file before editing
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
 
+# Modify the Nginx configuration to include the redirection
+sudo sed -i '/server_name _;/a \\t# Redirect /redirect_me to another URL\n\trewrite ^/redirect_me https://github.com/Elgibbor/ permanent;' /etc/nginx/sites-available/default
+
+# Test the Nginx configuration for syntax errors
 sudo nginx -t
-sudo service nginx start
+
+# Restart Nginx to apply the changes
+sudo service nginx restart
