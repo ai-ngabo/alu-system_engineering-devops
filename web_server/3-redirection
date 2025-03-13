@@ -7,7 +7,7 @@ sudo apt-get install -y nginx
 echo "Holberton School" | sudo tee /var/www/html/index.html
 
 # config redirection
-config_str ="server_name _;\n\trewrite ^\/redirect_me https://github.com/ai-ngabo permanent;"
+config_str="server_name _;\n\trewrite ^\/redirect_me https://github.com/ai-ngabo permanent;"
 sudo sed -i "s|server_name _;|$config_str|" /etc/nginx/sites-enabled/default
 
 
