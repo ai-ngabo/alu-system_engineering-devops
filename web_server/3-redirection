@@ -9,9 +9,9 @@ sudo apt-get install -y nginx
 echo "Holberton School" | sudo tee /var/www/html/index.html
 
 # Configure redirection
-config_str="server_name _;
-    rewrite ^/redirect_me https://github.com/ai-ngabo/ permanent;"
-sudo sed -i "s|server_name _;|$config_str|" /etc/nginx/sites-available/default
+# Avoid escape issues by passing the content directly as a multi-line string
+config_str="server_name _;\n    rewrite ^/redirect_me https://github.com/Elgibbor/ permanent;"
+sudo sed -i "s|server_name _;|server_name _;\n    rewrite ^/redirect_me https://github.com/Elgibbor/ permanent;|" /etc/nginx/sites-available/default
 
 # Test and restart Nginx
 sudo nginx -t
