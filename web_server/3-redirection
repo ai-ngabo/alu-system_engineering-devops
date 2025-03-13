@@ -1,19 +1,15 @@
 #!/usr/bin/env bash
-# Install nginx webserver on a new Ubuntu machine
+# Configuring  Nginx server to redirect /redirect_me page elsewhere.
 
-# Update package list and install nginx
-sudo apt-get update
-sudo apt-get install -y nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
 
-# Create a simple HTML file
 echo "Holberton School" | sudo tee /var/www/html/index.html
 
-# Configure redirection
-# Avoid escape issues by passing the content directly as a multi-line string
-config_str="server_name _;\n    rewrite ^/redirect_me https://github.com/Elgibbor/ permanent;"
-sudo sed -i "s|server_name _;|server_name _;\n    rewrite ^/redirect_me https://github.com/Elgibbor/ permanent;|" /etc/nginx/sites-available/default
+# redirection config
+config_str="server_name _;\\
+    rewrite ^/redirect_me https://github.com/Elgibbor/ permanent;"
+sudo sed -i "s|server_name _;|$config_str|" /etc/nginx/sites-available/default
 
-# Test and restart Nginx
 sudo nginx -t
-sudo service nginx restart
-
+sudo service nginx start
