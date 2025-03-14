@@ -16,8 +16,8 @@ frontend eke_front
 
 backend eke_back
         balance roundrobin
-        server 6414-web-01 3.82.215.250:80 check
-        server 6414-web-02 34.205.127.228:80 check
+        server 6444-web-01 3.82.215.250:80 check
+        server 6444-web-02 34.205.127.228:80 check
 "
 echo "$config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
