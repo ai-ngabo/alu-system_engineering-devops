@@ -1,0 +1,2216 @@
+-- Logs begin at Tue 2025-03-04 09:46:25 UTC, end at Fri 2025-03-14 14:27:15 UTC. --
+Mar 14 05:01:04 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 05:01:04.3500 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 05:01:04 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 077eb7d1-2247-4934-b772-6f49f6dd79b9
+Mar 14 05:15:35 6444-web-01 sshd[11947]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: Connection closed by remote host[0m
+Mar 14 05:15:36 6444-web-01 sshd[11948]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: banner line contains invalid characters[0m
+Mar 14 05:15:36 6444-web-01 sshd[11949]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: client sent invalid protocol identifier "GET / HTTP/1.1"[0m
+Mar 14 05:15:36 6444-web-01 sshd[11950]: Connection closed by 157.245.77.56 port 35854 [preauth]
+Mar 14 05:17:01 6444-web-01 CRON[11953]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 14 05:17:01 6444-web-01 CRON[11954]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 14 05:17:01 6444-web-01 CRON[11953]: pam_unix(cron:session): session closed for user root
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 05:26:09.3518 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 05:26:09.3934 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 05:26:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 56f37fa0-0932-4cd6-a771-52fbc41feaee
+Mar 14 05:42:23 6444-web-01 snapd[438]: storehelpers.go:954: cannot refresh: snap has no updates available: "amazon-ssm-agent", "core22", "snapd"
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 05:54:46.3947 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 05:54:46.4238 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 05:54:46 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: d602deb7-3379-49ed-9c66-7c3acf9fc742
+Mar 14 06:17:01 6444-web-01 CRON[11970]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 14 06:17:01 6444-web-01 CRON[11971]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 14 06:17:01 6444-web-01 CRON[11970]: pam_unix(cron:session): session closed for user root
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 06:21:38.4261 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 06:21:38.4633 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 06:21:38 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 1988e370-8008-47b0-b3e5-9c3ca14cd0f2
+Mar 14 06:25:01 6444-web-01 CRON[11974]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 14 06:25:01 6444-web-01 CRON[11975]: (root) CMD (test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily ))
+Mar 14 06:25:02 6444-web-01 CRON[11974]: pam_unix(cron:session): session closed for user root
+Mar 14 06:38:41 6444-web-01 systemd[1]: Starting Daily apt upgrade and clean activities...
+-- Subject: A start job for unit apt-daily-upgrade.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-daily-upgrade.service has begun execution.
+-- 
+-- The job identifier is 7619.
+Mar 14 06:38:51 6444-web-01 dbus-daemon[425]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.82' (uid=0 pid=12225 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+Mar 14 06:38:51 6444-web-01 systemd[1]: Starting PackageKit Daemon...
+-- Subject: A start job for unit packagekit.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has begun execution.
+-- 
+-- The job identifier is 7698.
+Mar 14 06:38:51 6444-web-01 PackageKit[12228]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon start[0m
+Mar 14 06:38:51 6444-web-01 dbus-daemon[425]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Mar 14 06:38:51 6444-web-01 systemd[1]: Started PackageKit Daemon.
+-- Subject: A start job for unit packagekit.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has finished successfully.
+-- 
+-- The job identifier is 7698.
+Mar 14 06:38:58 6444-web-01 systemd[1]: apt-daily-upgrade.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit apt-daily-upgrade.service has successfully entered the 'dead' state.
+Mar 14 06:38:58 6444-web-01 systemd[1]: Finished Daily apt upgrade and clean activities.
+-- Subject: A start job for unit apt-daily-upgrade.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-daily-upgrade.service has finished successfully.
+-- 
+-- The job identifier is 7619.
+Mar 14 06:44:02 6444-web-01 PackageKit[12228]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon quit[0m
+Mar 14 06:44:02 6444-web-01 systemd[1]: packagekit.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit packagekit.service has successfully entered the 'dead' state.
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 06:47:06.4646 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 06:47:06.5002 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 06:47:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 111b26c2-812f-471b-bc6f-d2327a99a8b1
+Mar 14 06:55:45 6444-web-01 sshd[12411]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: client sent invalid protocol identifier "MGLNDD_3.82.215.250_22"[0m
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 07:15:14.6010 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 07:15:14.6421 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 07:15:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: eae86fc6-559d-48bf-8c84-a63f2489fc27
+Mar 14 07:17:01 6444-web-01 CRON[12417]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 14 07:17:01 6444-web-01 CRON[12418]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 14 07:17:01 6444-web-01 CRON[12417]: pam_unix(cron:session): session closed for user root
+Mar 14 07:20:08 6444-web-01 sshd[12420]: Connection closed by 66.240.219.146 port 55426 [preauth]
+Mar 14 07:20:11 6444-web-01 sshd[12422]: Connection closed by 66.240.219.146 port 55554 [preauth]
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 07:44:16.6443 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 07:44:16.6868 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 07:44:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 4e2d1dd5-8af4-47c0-ad7f-1c4f72d33403
+Mar 14 07:54:28 6444-web-01 sshd[12429]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: client sent invalid protocol identifier ""[0m
+Mar 14 07:54:58 6444-web-01 sshd[12431]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: client sent invalid protocol identifier "GET / HTTP/1.1"[0m
+Mar 14 07:55:33 6444-web-01 sshd[12432]: Connection closed by 3.15.149.12 port 38004 [preauth]
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 08:09:16.6883 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 08:09:16.7248 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 08:09:16 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: fb0640e0-56d6-4d31-8000-7071ba2183c7
+Mar 14 08:17:01 6444-web-01 CRON[12439]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 14 08:17:01 6444-web-01 CRON[12440]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 14 08:17:01 6444-web-01 CRON[12439]: pam_unix(cron:session): session closed for user root
+Mar 14 08:25:51 6444-web-01 sshd[12444]: Invalid user  from 47.96.109.144 port 52744
+Mar 14 08:25:58 6444-web-01 sshd[12444]: Connection closed by invalid user  47.96.109.144 port 52744 [preauth]
+Mar 14 08:31:52 6444-web-01 sshd[12447]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: Connection closed by remote host[0m
+Mar 14 08:31:58 6444-web-01 sshd[12448]: Connection closed by 169.0.57.94 port 43344 [preauth]
+Mar 14 08:32:07 6444-web-01 sshd[12450]: Connection closed by 169.0.57.94 port 49812 [preauth]
+Mar 14 08:32:14 6444-web-01 sshd[12452]: Connection closed by 169.0.57.94 port 59056 [preauth]
+Mar 14 08:32:19 6444-web-01 sshd[12454]: Invalid user ftp from 169.0.57.94 port 38791
+Mar 14 08:32:20 6444-web-01 sshd[12454]: Connection closed by invalid user ftp 169.0.57.94 port 38791 [preauth]
+Mar 14 08:32:26 6444-web-01 sshd[12456]: Connection closed by 169.0.57.94 port 43999 [preauth]
+Mar 14 08:32:33 6444-web-01 sshd[12458]: Connection closed by 169.0.57.94 port 52823 [preauth]
+Mar 14 08:32:42 6444-web-01 sshd[12460]: Connection closed by 169.0.57.94 port 59850 [preauth]
+Mar 14 08:32:48 6444-web-01 sshd[12462]: Connection closed by 169.0.57.94 port 40778 [preauth]
+Mar 14 08:32:59 6444-web-01 sshd[12464]: Connection closed by 169.0.57.94 port 46403 [preauth]
+Mar 14 08:33:06 6444-web-01 sshd[12466]: Connection closed by 169.0.57.94 port 57769 [preauth]
+Mar 14 08:33:14 6444-web-01 sshd[12468]: Connection closed by 169.0.57.94 port 36824 [preauth]
+Mar 14 08:33:21 6444-web-01 sshd[12470]: Connection closed by 169.0.57.94 port 45459 [preauth]
+Mar 14 08:33:28 6444-web-01 sshd[12472]: Connection closed by 169.0.57.94 port 52324 [preauth]
+Mar 14 08:33:34 6444-web-01 sshd[12474]: Invalid user admin from 169.0.57.94 port 33102
+Mar 14 08:33:34 6444-web-01 sshd[12474]: Connection closed by invalid user admin 169.0.57.94 port 33102 [preauth]
+Mar 14 08:33:42 6444-web-01 sshd[12476]: Connection closed by 169.0.57.94 port 39084 [preauth]
+Mar 14 08:33:48 6444-web-01 sshd[12478]: Invalid user hduser from 169.0.57.94 port 48101
+Mar 14 08:33:48 6444-web-01 sshd[12478]: Connection closed by invalid user hduser 169.0.57.94 port 48101 [preauth]
+Mar 14 08:33:55 6444-web-01 sshd[12480]: Connection reset by 169.0.57.94 port 54016 [preauth]
+Mar 14 08:34:05 6444-web-01 sshd[12482]: Connection closed by 169.0.57.94 port 33128 [preauth]
+Mar 14 08:34:12 6444-web-01 sshd[12484]: Connection closed by 169.0.57.94 port 43888 [preauth]
+Mar 14 08:34:21 6444-web-01 sshd[12486]: Connection closed by 169.0.57.94 port 51564 [preauth]
+Mar 14 08:34:32 6444-web-01 sshd[12488]: Connection closed by 169.0.57.94 port 60987 [preauth]
+Mar 14 08:34:38 6444-web-01 sshd[12491]: Connection closed by 169.0.57.94 port 42905 [preauth]
+Mar 14 08:34:42 6444-web-01 sshd[12493]: Invalid user ubnt from 169.0.57.94 port 50166
+Mar 14 08:34:43 6444-web-01 sshd[12493]: Connection closed by invalid user ubnt 169.0.57.94 port 50166 [preauth]
+Mar 14 08:34:50 6444-web-01 sshd[12495]: Connection closed by 169.0.57.94 port 54699 [preauth]
+Mar 14 08:34:55 6444-web-01 sshd[12497]: Invalid user test from 169.0.57.94 port 35269
+Mar 14 08:34:55 6444-web-01 sshd[12497]: Connection closed by invalid user test 169.0.57.94 port 35269 [preauth]
+Mar 14 08:35:01 6444-web-01 sshd[12499]: Invalid user guest from 169.0.57.94 port 39734
+Mar 14 08:35:01 6444-web-01 sshd[12499]: Connection closed by invalid user guest 169.0.57.94 port 39734 [preauth]
+Mar 14 08:35:05 6444-web-01 sshd[12501]: Connection closed by authenticating user root 169.0.57.94 port 46460 [preauth]
+Mar 14 08:35:12 6444-web-01 sshd[12503]: Connection closed by 169.0.57.94 port 49724 [preauth]
+Mar 14 08:35:19 6444-web-01 sshd[12505]: Connection closed by 169.0.57.94 port 58280 [preauth]
+Mar 14 08:35:24 6444-web-01 sshd[12507]: Invalid user oracle from 169.0.57.94 port 37221
+Mar 14 08:35:25 6444-web-01 sshd[12507]: Connection closed by invalid user oracle 169.0.57.94 port 37221 [preauth]
+Mar 14 08:35:30 6444-web-01 sshd[12509]: Invalid user ansible from 169.0.57.94 port 42896
+Mar 14 08:35:30 6444-web-01 sshd[12509]: Connection closed by invalid user ansible 169.0.57.94 port 42896 [preauth]
+Mar 14 08:35:35 6444-web-01 sshd[12511]: Invalid user ubnt from 169.0.57.94 port 49012
+Mar 14 08:35:35 6444-web-01 sshd[12511]: Connection closed by invalid user ubnt 169.0.57.94 port 49012 [preauth]
+Mar 14 08:35:43 6444-web-01 sshd[12513]: Connection closed by 169.0.57.94 port 53336 [preauth]
+Mar 14 08:35:49 6444-web-01 sshd[12515]: Connection closed by 169.0.57.94 port 34076 [preauth]
+Mar 14 08:35:58 6444-web-01 sshd[12517]: Connection closed by 169.0.57.94 port 39844 [preauth]
+Mar 14 08:36:04 6444-web-01 sshd[12519]: Connection closed by 169.0.57.94 port 49178 [preauth]
+Mar 14 08:36:14 6444-web-01 sshd[12521]: Connection closed by 169.0.57.94 port 55820 [preauth]
+Mar 14 08:36:20 6444-web-01 sshd[12523]: Connection closed by authenticating user root 169.0.57.94 port 38428 [preauth]
+Mar 14 08:36:29 6444-web-01 sshd[12525]: Connection closed by 169.0.57.94 port 44756 [preauth]
+Mar 14 08:36:36 6444-web-01 sshd[12527]: Connection closed by 169.0.57.94 port 53995 [preauth]
+Mar 14 08:36:48 6444-web-01 sshd[12529]: Connection closed by 169.0.57.94 port 60277 [preauth]
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 08:37:43.7502 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 08:37:43.7832 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 08:37:43 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 485de91f-7dd1-4b42-a2b0-203f21e62326
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 09:06:06.7846 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 09:06:06.8195 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 09:06:06 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 1b328d8c-8cc1-4d6b-9e59-0b7e1d639b77
+Mar 14 09:17:01 6444-web-01 CRON[12540]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 14 09:17:01 6444-web-01 CRON[12541]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 14 09:17:01 6444-web-01 CRON[12540]: pam_unix(cron:session): session closed for user root
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 09:34:53.8217 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 09:34:53.8592 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 09:34:53 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 41756461-4a6b-4dcc-b28b-f242e6ee0437
+Mar 14 10:00:05 6444-web-01 sshd[12550]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: Connection closed by remote host[0m
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 10:03:17.9581 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 10:03:17 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 10:03:18 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 10:03:17.9905 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 10:03:18 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 5e3b236d-df78-486c-ac89-128daeb5076b
+Mar 14 10:03:24 6444-web-01 sshd[12552]: Invalid user acer from 209.38.26.56 port 44946
+Mar 14 10:03:24 6444-web-01 sshd[12552]: Connection closed by invalid user acer 209.38.26.56 port 44946 [preauth]
+Mar 14 10:04:07 6444-web-01 systemd[1]: Starting Message of the Day...
+-- Subject: A start job for unit motd-news.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit motd-news.service has begun execution.
+-- 
+-- The job identifier is 7778.
+Mar 14 10:04:13 6444-web-01 50-motd-news[12582]:  * Ubuntu Pro delivers the most comprehensive open source security and
+Mar 14 10:04:13 6444-web-01 50-motd-news[12582]:    compliance features.
+Mar 14 10:04:13 6444-web-01 50-motd-news[12582]:    https://ubuntu.com/aws/pro
+Mar 14 10:04:13 6444-web-01 systemd[1]: motd-news.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit motd-news.service has successfully entered the 'dead' state.
+Mar 14 10:04:13 6444-web-01 systemd[1]: Finished Message of the Day.
+-- Subject: A start job for unit motd-news.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit motd-news.service has finished successfully.
+-- 
+-- The job identifier is 7778.
+Mar 14 10:07:23 6444-web-01 snapd[438]: storehelpers.go:954: cannot refresh: snap has no updates available: "amazon-ssm-agent", "core22", "snapd"
+Mar 14 10:07:45 6444-web-01 sshd[12592]: Connection reset by 147.185.132.81 port 59612 [preauth]
+Mar 14 10:17:01 6444-web-01 CRON[12596]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 14 10:17:01 6444-web-01 CRON[12597]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 14 10:17:01 6444-web-01 CRON[12596]: pam_unix(cron:session): session closed for user root
+Mar 14 10:17:46 6444-web-01 sshd[12599]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: Connection closed by remote host[0m
+Mar 14 10:18:14 6444-web-01 sshd[12600]: Connection closed by 104.234.115.142 port 46716 [preauth]
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 10:31:19.9920 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 10:31:19 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 10:31:20 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 10:31:20.0257 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 10:31:20 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: d2894230-569a-488e-aa62-34c8c62113f7
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 11:00:35.0271 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 11:00:35.0754 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 11:00:35 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 223231da-eff8-4c96-a168-729b26e1a0b9
+Mar 14 11:17:01 6444-web-01 CRON[12613]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 14 11:17:01 6444-web-01 CRON[12614]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 14 11:17:01 6444-web-01 CRON[12613]: pam_unix(cron:session): session closed for user root
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 11:28:14.0771 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 11:28:14.1144 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 11:28:14 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 9a0f25fc-1217-4ff9-92f3-1f892903843e
+Mar 14 11:52:33 6444-web-01 systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: A start job for unit systemd-tmpfiles-clean.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit systemd-tmpfiles-clean.service has begun execution.
+-- 
+-- The job identifier is 7857.
+Mar 14 11:52:33 6444-web-01 systemd[1]: systemd-tmpfiles-clean.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit systemd-tmpfiles-clean.service has successfully entered the 'dead' state.
+Mar 14 11:52:33 6444-web-01 systemd[1]: Finished Cleanup of Temporary Directories.
+-- Subject: A start job for unit systemd-tmpfiles-clean.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit systemd-tmpfiles-clean.service has finished successfully.
+-- 
+-- The job identifier is 7857.
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 11:58:09.1158 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 11:58:09.1523 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 11:58:09 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 29e3284b-2eae-4df9-a86e-ef7faa4295c8
+Mar 14 12:12:24 6444-web-01 snapd[438]: storehelpers.go:954: cannot refresh: snap has no updates available: "amazon-ssm-agent", "core22", "snapd"
+Mar 14 12:17:01 6444-web-01 CRON[12631]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 14 12:17:01 6444-web-01 CRON[12632]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 14 12:17:01 6444-web-01 CRON[12631]: pam_unix(cron:session): session closed for user root
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 12:26:29.1548 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 12:26:29.1966 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 12:26:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 6a3630e6-9950-4448-80c8-38cb66a1936b
+Mar 14 12:38:51 6444-web-01 sshd[12639]: Invalid user  from 194.0.234.149 port 50158
+Mar 14 12:39:00 6444-web-01 sshd[12639]: Connection closed by invalid user  194.0.234.149 port 50158 [preauth]
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 12:53:29.2002 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 12:53:29.2337 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 12:53:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: b152183f-0c6a-4139-b393-57ae5242c82b
+Mar 14 12:53:51 6444-web-01 sshd[12644]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: Connection closed by remote host[0m
+Mar 14 13:17:01 6444-web-01 CRON[12650]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 14 13:17:01 6444-web-01 CRON[12651]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 14 13:17:01 6444-web-01 CRON[12650]: pam_unix(cron:session): session closed for user root
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 13:22:45.2352 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 13:22:45.2777 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 13:22:45 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 3bb2f6bd-f818-4697-a0fb-c552d880d414
+Mar 14 13:37:37 6444-web-01 sshd[12659]: Accepted publickey for ubuntu from 102.22.164.168 port 51568 ssh2: RSA SHA256:lrYfa5v9uEjPJsgrpI940UrL5gPkejKbUSOhPMQtjHA
+Mar 14 13:37:37 6444-web-01 sshd[12659]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)
+Mar 14 13:37:37 6444-web-01 systemd[1]: Created slice User Slice of UID 1000.
+-- Subject: A start job for unit user-1000.slice has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit user-1000.slice has finished successfully.
+-- 
+-- The job identifier is 7862.
+Mar 14 13:37:37 6444-web-01 systemd[1]: Starting User Runtime Directory /run/user/1000...
+-- Subject: A start job for unit user-runtime-dir@1000.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit user-runtime-dir@1000.service has begun execution.
+-- 
+-- The job identifier is 7866.
+Mar 14 13:37:37 6444-web-01 systemd-logind[443]: New session 35 of user ubuntu.
+-- Subject: A new session 35 has been created for user ubuntu
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- Documentation: https://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID 35 has been created for the user ubuntu.
+-- 
+-- The leading process of the session is 12659.
+Mar 14 13:37:37 6444-web-01 systemd[1]: Finished User Runtime Directory /run/user/1000.
+-- Subject: A start job for unit user-runtime-dir@1000.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit user-runtime-dir@1000.service has finished successfully.
+-- 
+-- The job identifier is 7866.
+Mar 14 13:37:37 6444-web-01 systemd[1]: Starting User Manager for UID 1000...
+-- Subject: A start job for unit user@1000.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit user@1000.service has begun execution.
+-- 
+-- The job identifier is 7861.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: pam_unix(systemd-user:session): session opened for user ubuntu by (uid=0)
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Reached target Paths.
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 14.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Reached target Timers.
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 15.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Starting D-Bus User Message Bus Socket.
+-- Subject: A start job for unit UNIT has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has begun execution.
+-- 
+-- The job identifier is 7.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Listening on GnuPG network certificate management daemon.
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 12.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 4.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 13.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 10.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Listening on GnuPG cryptographic agent and passphrase cache.
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 8.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Listening on debconf communication socket.
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 11.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Listening on REST API socket for snapd user session agent.
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 9.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Listening on D-Bus User Message Bus Socket.
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 7.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Reached target Sockets.
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 3.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Reached target Basic System.
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 2.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Reached target Main User Target.
+-- Subject: A start job for unit UNIT has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit UNIT has finished successfully.
+-- 
+-- The job identifier is 1.
+Mar 14 13:37:37 6444-web-01 systemd[12663]: Startup finished in 357ms.
+-- Subject: User manager start-up is now complete
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The user manager instance for user 1000 has been started. All services queued
+-- for starting have been started. Note that other services might still be starting
+-- up or be started at any later time.
+-- 
+-- Startup of the manager took 357736 microseconds.
+Mar 14 13:37:37 6444-web-01 systemd[1]: Started User Manager for UID 1000.
+-- Subject: A start job for unit user@1000.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit user@1000.service has finished successfully.
+-- 
+-- The job identifier is 7861.
+Mar 14 13:37:37 6444-web-01 systemd[1]: Started Session 35 of user ubuntu.
+-- Subject: A start job for unit session-35.scope has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit session-35.scope has finished successfully.
+-- 
+-- The job identifier is 7943.
+Mar 14 13:38:41 6444-web-01 sudo[12761]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/systemctl stop nginx[0m
+Mar 14 13:38:41 6444-web-01 sudo[12761]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 13:38:41 6444-web-01 systemd[1]: Stopping A high performance web server and a reverse proxy server...
+-- Subject: A stop job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 8026.
+Mar 14 13:38:41 6444-web-01 systemd[1]: nginx.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has successfully entered the 'dead' state.
+Mar 14 13:38:41 6444-web-01 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+-- Subject: A stop job for unit nginx.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has finished.
+-- 
+-- The job identifier is 8026 and the job result is done.
+Mar 14 13:38:41 6444-web-01 sudo[12761]: pam_unix(sudo:session): session closed for user root
+Mar 14 13:38:47 6444-web-01 sudo[12766]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt purge nginx nginx-common[0m
+Mar 14 13:38:47 6444-web-01 sudo[12766]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 13:38:54 6444-web-01 systemd[1]: Reloading.
+Mar 14 13:38:54 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:38:54 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 13:38:54 6444-web-01 systemd[1]: Starting Message of the Day...
+-- Subject: A start job for unit motd-news.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit motd-news.service has begun execution.
+-- 
+-- The job identifier is 8108.
+Mar 14 13:38:55 6444-web-01 systemd[1]: Reloading.
+Mar 14 13:38:55 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:38:55 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 13:38:56 6444-web-01 systemd[1]: Starting Daily apt download activities...
+-- Subject: A start job for unit apt-daily.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-daily.service has begun execution.
+-- 
+-- The job identifier is 8269.
+Mar 14 13:38:56 6444-web-01 systemd[1]: apt-daily.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit apt-daily.service has successfully entered the 'dead' state.
+Mar 14 13:38:56 6444-web-01 systemd[1]: Finished Daily apt download activities.
+-- Subject: A start job for unit apt-daily.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-daily.service has finished successfully.
+-- 
+-- The job identifier is 8269.
+Mar 14 13:38:57 6444-web-01 systemd[1]: Reloading.
+Mar 14 13:38:57 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:38:57 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 13:38:57 6444-web-01 systemd[1]: Reloading.
+Mar 14 13:38:57 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:38:57 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 13:38:57 6444-web-01 systemd[1]: Reloading.
+Mar 14 13:38:57 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:38:57 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 13:38:57 6444-web-01 systemd[1]: Reloading.
+Mar 14 13:38:58 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:38:58 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 13:38:58 6444-web-01 systemd[1]: Reloading.
+Mar 14 13:38:58 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:38:58 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 13:38:59 6444-web-01 dbus-daemon[425]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.93' (uid=0 pid=13246 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+Mar 14 13:38:59 6444-web-01 systemd[1]: Starting PackageKit Daemon...
+-- Subject: A start job for unit packagekit.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has begun execution.
+-- 
+-- The job identifier is 8753.
+Mar 14 13:38:59 6444-web-01 PackageKit[13249]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon start[0m
+Mar 14 13:38:59 6444-web-01 dbus-daemon[425]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Mar 14 13:38:59 6444-web-01 systemd[1]: Started PackageKit Daemon.
+-- Subject: A start job for unit packagekit.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has finished successfully.
+-- 
+-- The job identifier is 8753.
+Mar 14 13:39:01 6444-web-01 sudo[12766]: pam_unix(sudo:session): session closed for user root
+Mar 14 13:39:11 6444-web-01 sudo[13295]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/rm -rf /etc/nginx /var/log/nginx /var/www/html[0m
+Mar 14 13:39:11 6444-web-01 sudo[13295]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 13:39:11 6444-web-01 sudo[13295]: pam_unix(sudo:session): session closed for user root
+Mar 14 13:39:26 6444-web-01 50-motd-news[13301]:  * Ubuntu Pro delivers the most comprehensive open source security and
+Mar 14 13:39:26 6444-web-01 50-motd-news[13301]:    compliance features.
+Mar 14 13:39:26 6444-web-01 50-motd-news[13301]:    https://ubuntu.com/aws/pro
+Mar 14 13:39:26 6444-web-01 systemd[1]: motd-news.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit motd-news.service has successfully entered the 'dead' state.
+Mar 14 13:39:26 6444-web-01 systemd[1]: Finished Message of the Day.
+-- Subject: A start job for unit motd-news.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit motd-news.service has finished successfully.
+-- 
+-- The job identifier is 8108.
+Mar 14 13:42:21 6444-web-01 sshd[13309]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: Connection closed by remote host[0m
+Mar 14 13:42:53 6444-web-01 sshd[13314]: Invalid user kafka from 14.103.50.119 port 54616
+Mar 14 13:42:54 6444-web-01 sshd[13314]: Connection closed by invalid user kafka 14.103.50.119 port 54616 [preauth]
+Mar 14 13:43:01 6444-web-01 sshd[13316]: Invalid user oracle from 14.103.50.119 port 54662
+Mar 14 13:43:01 6444-web-01 sshd[13316]: Connection closed by invalid user oracle 14.103.50.119 port 54662 [preauth]
+Mar 14 13:43:04 6444-web-01 sshd[13318]: Invalid user orangepi from 14.103.50.119 port 39008
+Mar 14 13:43:04 6444-web-01 sshd[13318]: Connection closed by invalid user orangepi 14.103.50.119 port 39008 [preauth]
+Mar 14 13:43:14 6444-web-01 sshd[13320]: Invalid user user from 14.103.50.119 port 39036
+Mar 14 13:43:14 6444-web-01 sshd[13320]: Connection closed by invalid user user 14.103.50.119 port 39036 [preauth]
+Mar 14 13:43:17 6444-web-01 sshd[13322]: Invalid user nfsnobody from 14.103.50.119 port 59906
+Mar 14 13:43:17 6444-web-01 sshd[13322]: Connection closed by invalid user nfsnobody 14.103.50.119 port 59906 [preauth]
+Mar 14 13:43:19 6444-web-01 sshd[13324]: Connection closed by authenticating user root 14.103.50.119 port 59918 [preauth]
+Mar 14 13:43:28 6444-web-01 sshd[13326]: Invalid user test from 14.103.50.119 port 40378
+Mar 14 13:43:28 6444-web-01 sshd[13326]: Connection closed by invalid user test 14.103.50.119 port 40378 [preauth]
+Mar 14 13:43:29 6444-web-01 sshd[13328]: Invalid user kvm from 14.103.50.119 port 40384
+Mar 14 13:43:30 6444-web-01 sshd[13328]: Connection closed by invalid user kvm 14.103.50.119 port 40384 [preauth]
+Mar 14 13:43:31 6444-web-01 sshd[13330]: Invalid user guest from 14.103.50.119 port 40392
+Mar 14 13:43:31 6444-web-01 sshd[13330]: Connection closed by invalid user guest 14.103.50.119 port 40392 [preauth]
+Mar 14 13:43:34 6444-web-01 sshd[13332]: Invalid user guest from 14.103.50.119 port 46330
+Mar 14 13:43:35 6444-web-01 sshd[13332]: Connection closed by invalid user guest 14.103.50.119 port 46330 [preauth]
+Mar 14 13:43:37 6444-web-01 sshd[13334]: Invalid user guest from 14.103.50.119 port 46340
+Mar 14 13:43:37 6444-web-01 sshd[13334]: Connection closed by invalid user guest 14.103.50.119 port 46340 [preauth]
+Mar 14 13:43:39 6444-web-01 sshd[13336]: Invalid user vagrant from 14.103.50.119 port 46346
+Mar 14 13:43:39 6444-web-01 sshd[13336]: Connection closed by invalid user vagrant 14.103.50.119 port 46346 [preauth]
+Mar 14 13:43:43 6444-web-01 sshd[13338]: Connection closed by authenticating user ubuntu 14.103.50.119 port 46360 [preauth]
+Mar 14 13:43:44 6444-web-01 sshd[13340]: Invalid user centos from 14.103.50.119 port 47630
+Mar 14 13:43:45 6444-web-01 sshd[13340]: Connection closed by invalid user centos 14.103.50.119 port 47630 [preauth]
+Mar 14 13:43:47 6444-web-01 sshd[13342]: Invalid user azureuser from 14.103.50.119 port 47642
+Mar 14 13:43:48 6444-web-01 sshd[13342]: Connection closed by invalid user azureuser 14.103.50.119 port 47642 [preauth]
+Mar 14 13:43:50 6444-web-01 sshd[13344]: Invalid user guest from 14.103.50.119 port 47656
+Mar 14 13:43:51 6444-web-01 sshd[13344]: Connection closed by invalid user guest 14.103.50.119 port 47656 [preauth]
+Mar 14 13:43:55 6444-web-01 sshd[13346]: Invalid user mysql from 14.103.50.119 port 50430
+Mar 14 13:43:55 6444-web-01 sshd[13346]: Connection closed by invalid user mysql 14.103.50.119 port 50430 [preauth]
+Mar 14 13:44:05 6444-web-01 sshd[13350]: Invalid user oracle from 14.103.50.119 port 50452
+Mar 14 13:44:05 6444-web-01 PackageKit[13249]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon quit[0m
+Mar 14 13:44:05 6444-web-01 systemd[1]: packagekit.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit packagekit.service has successfully entered the 'dead' state.
+Mar 14 13:44:05 6444-web-01 sshd[13350]: Connection closed by invalid user oracle 14.103.50.119 port 50452 [preauth]
+Mar 14 13:44:06 6444-web-01 sshd[13353]: Invalid user kafka from 14.103.50.119 port 55652
+Mar 14 13:44:07 6444-web-01 sshd[13353]: Connection closed by invalid user kafka 14.103.50.119 port 55652 [preauth]
+Mar 14 13:44:10 6444-web-01 sshd[13348]: Connection closed by authenticating user ubuntu 14.103.50.119 port 50440 [preauth]
+Mar 14 13:44:12 6444-web-01 sshd[13355]: Invalid user openvswitch from 14.103.50.119 port 55654
+Mar 14 13:44:12 6444-web-01 sshd[13355]: Connection closed by invalid user openvswitch 14.103.50.119 port 55654 [preauth]
+Mar 14 13:44:14 6444-web-01 sshd[13357]: Invalid user kafka from 14.103.50.119 port 37932
+Mar 14 13:44:14 6444-web-01 sshd[13357]: Connection closed by invalid user kafka 14.103.50.119 port 37932 [preauth]
+Mar 14 13:44:17 6444-web-01 sshd[13359]: Invalid user oracle from 14.103.50.119 port 37946
+Mar 14 13:44:17 6444-web-01 sshd[13359]: Connection closed by invalid user oracle 14.103.50.119 port 37946 [preauth]
+Mar 14 13:44:19 6444-web-01 sshd[13361]: Invalid user prometheus from 14.103.50.119 port 37952
+Mar 14 13:44:19 6444-web-01 sshd[13361]: Connection closed by invalid user prometheus 14.103.50.119 port 37952 [preauth]
+Mar 14 13:44:21 6444-web-01 sshd[13364]: Invalid user jenkins from 14.103.50.119 port 37962
+Mar 14 13:44:21 6444-web-01 sshd[13364]: Connection closed by invalid user jenkins 14.103.50.119 port 37962 [preauth]
+Mar 14 13:44:24 6444-web-01 sshd[13366]: Invalid user ubnt from 14.103.50.119 port 56576
+Mar 14 13:44:25 6444-web-01 sshd[13366]: Connection closed by invalid user ubnt 14.103.50.119 port 56576 [preauth]
+Mar 14 13:44:29 6444-web-01 sshd[13368]: Connection closed by authenticating user root 14.103.50.119 port 56580 [preauth]
+Mar 14 13:44:30 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:44:30 6444-web-01 sshd[13370]: Invalid user nfsnobody from 14.103.50.119 port 56600
+Mar 14 13:44:30 6444-web-01 polkitd(authority=local)[479]: [0;1;39m[0;1;31m[0;1;39mRegistered Authentication Agent for unix-process:13378:9405788 (system bus name :1.98 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale C.UTF-8)[0m
+Mar 14 13:44:30 6444-web-01 sshd[13370]: Connection closed by invalid user nfsnobody 14.103.50.119 port 56600 [preauth]
+Mar 14 13:44:32 6444-web-01 sshd[13391]: Invalid user kubelet from 14.103.50.119 port 58236
+Mar 14 13:44:32 6444-web-01 sshd[13391]: Connection closed by invalid user kubelet 14.103.50.119 port 58236 [preauth]
+Mar 14 13:44:34 6444-web-01 sshd[13393]: Invalid user minecraft from 14.103.50.119 port 58248
+Mar 14 13:44:35 6444-web-01 sshd[13393]: Connection closed by invalid user minecraft 14.103.50.119 port 58248 [preauth]
+Mar 14 13:44:37 6444-web-01 sshd[13395]: Invalid user devops from 14.103.50.119 port 58256
+Mar 14 13:44:37 6444-web-01 sshd[13395]: Connection closed by invalid user devops 14.103.50.119 port 58256 [preauth]
+Mar 14 13:44:38 6444-web-01 polkitd(authority=local)[479]: [0;1;39m[0;1;31m[0;1;39mUnregistered Authentication Agent for unix-process:13378:9405788 (system bus name :1.98, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale C.UTF-8) (disconnected from bus)[0m
+Mar 14 13:44:38 6444-web-01 polkitd(authority=local)[479]: [0;1;39m[0;1;31m[0;1;39mOperator of unix-process:13378:9405788 FAILED to authenticate to gain authorization for action org.freedesktop.systemd1.manage-units for system-bus-name::1.99 [<unknown>] (owned by unix-user:ubuntu)[0m
+Mar 14 13:44:39 6444-web-01 sshd[13397]: Invalid user steam from 14.103.50.119 port 58272
+Mar 14 13:44:40 6444-web-01 sshd[13397]: Connection closed by invalid user steam 14.103.50.119 port 58272 [preauth]
+Mar 14 13:44:41 6444-web-01 sshd[13399]: Invalid user postgres from 14.103.50.119 port 58278
+Mar 14 13:44:42 6444-web-01 sshd[13399]: Connection closed by invalid user postgres 14.103.50.119 port 58278 [preauth]
+Mar 14 13:44:43 6444-web-01 sudo[13401]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=./3-redirection[0m
+Mar 14 13:44:43 6444-web-01 sudo[13401]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 13:44:43 6444-web-01 systemd[1]: Starting Update APT News...
+-- Subject: A start job for unit apt-news.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has begun execution.
+-- 
+-- The job identifier is 8833.
+Mar 14 13:44:43 6444-web-01 systemd[1]: Starting Update the local ESM caches...
+-- Subject: A start job for unit esm-cache.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has begun execution.
+-- 
+-- The job identifier is 8912.
+Mar 14 13:44:44 6444-web-01 systemd[1]: apt-news.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit apt-news.service has successfully entered the 'dead' state.
+Mar 14 13:44:44 6444-web-01 systemd[1]: Finished Update APT News.
+-- Subject: A start job for unit apt-news.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has finished successfully.
+-- 
+-- The job identifier is 8833.
+Mar 14 13:44:44 6444-web-01 dbus-daemon[425]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.100' (uid=0 pid=13733 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+Mar 14 13:44:44 6444-web-01 systemd[1]: Starting PackageKit Daemon...
+-- Subject: A start job for unit packagekit.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has begun execution.
+-- 
+-- The job identifier is 8991.
+Mar 14 13:44:44 6444-web-01 PackageKit[13736]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon start[0m
+Mar 14 13:44:44 6444-web-01 dbus-daemon[425]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Mar 14 13:44:44 6444-web-01 systemd[1]: Started PackageKit Daemon.
+-- Subject: A start job for unit packagekit.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has finished successfully.
+-- 
+-- The job identifier is 8991.
+Mar 14 13:44:44 6444-web-01 systemd[1]: esm-cache.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit esm-cache.service has successfully entered the 'dead' state.
+Mar 14 13:44:44 6444-web-01 systemd[1]: Finished Update the local ESM caches.
+-- Subject: A start job for unit esm-cache.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has finished successfully.
+-- 
+-- The job identifier is 8912.
+Mar 14 13:44:51 6444-web-01 systemd[1]: Reloading.
+Mar 14 13:44:52 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:44:52 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 13:44:52 6444-web-01 systemd[1]: Reloading.
+Mar 14 13:44:52 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:44:52 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 13:44:52 6444-web-01 systemd[1]: Reloading.
+Mar 14 13:44:53 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:44:53 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 13:44:53 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 9314.
+Mar 14 13:44:53 6444-web-01 systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: A start job for unit nginx.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished successfully.
+-- 
+-- The job identifier is 9314.
+Mar 14 13:44:53 6444-web-01 systemd[1]: Reloading.
+Mar 14 13:44:53 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:44:53 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 13:44:55 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:44:56 6444-web-01 systemd[1]: Stopping A high performance web server and a reverse proxy server...
+-- Subject: A stop job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 9553.
+Mar 14 13:44:56 6444-web-01 systemd[1]: nginx.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has successfully entered the 'dead' state.
+Mar 14 13:44:56 6444-web-01 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+-- Subject: A stop job for unit nginx.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has finished.
+-- 
+-- The job identifier is 9553 and the job result is done.
+Mar 14 13:44:56 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 9553.
+Mar 14 13:44:56 6444-web-01 systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: A start job for unit nginx.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished successfully.
+-- 
+-- The job identifier is 9553.
+Mar 14 13:44:56 6444-web-01 sudo[13401]: pam_unix(sudo:session): session closed for user root
+Mar 14 13:48:44 6444-web-01 sudo[14190]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/chown -R www-data:www-data /var/log/nginx[0m
+Mar 14 13:48:44 6444-web-01 sudo[14190]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 13:48:44 6444-web-01 sudo[14190]: pam_unix(sudo:session): session closed for user root
+Mar 14 13:48:53 6444-web-01 sudo[14192]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/chmod -R 755 /var/log/nginx[0m
+Mar 14 13:48:53 6444-web-01 sudo[14192]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 13:48:53 6444-web-01 sudo[14192]: pam_unix(sudo:session): session closed for user root
+Mar 14 13:49:01 6444-web-01 sudo[14194]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/chown www-data:www-data /run/nginx.pid[0m
+Mar 14 13:49:01 6444-web-01 sudo[14194]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 13:49:01 6444-web-01 sudo[14194]: pam_unix(sudo:session): session closed for user root
+Mar 14 13:49:15 6444-web-01 sudo[14196]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx[0m
+Mar 14 13:49:15 6444-web-01 sudo[14196]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 13:49:15 6444-web-01 systemd[1]: Stopping A high performance web server and a reverse proxy server...
+-- Subject: A stop job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 9632.
+Mar 14 13:49:15 6444-web-01 start-stop-daemon[14199]: /sbin/start-stop-daemon: matching only on non-root pidfile /run/nginx.pid is insecure
+Mar 14 13:49:15 6444-web-01 systemd[1]: nginx.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has successfully entered the 'dead' state.
+Mar 14 13:49:15 6444-web-01 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+-- Subject: A stop job for unit nginx.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has finished.
+-- 
+-- The job identifier is 9632 and the job result is done.
+Mar 14 13:49:15 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 9632.
+Mar 14 13:49:15 6444-web-01 systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: A start job for unit nginx.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished successfully.
+-- 
+-- The job identifier is 9632.
+Mar 14 13:49:15 6444-web-01 sudo[14196]: pam_unix(sudo:session): session closed for user root
+Mar 14 13:49:21 6444-web-01 sudo[14205]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 14 13:49:21 6444-web-01 sudo[14205]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 13:49:21 6444-web-01 sudo[14205]: pam_unix(sudo:session): session closed for user root
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 13:49:58.2791 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 13:49:58.3159 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 13:49:58 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 5a021383-74ff-4863-952a-5e781d12abe1
+Mar 14 13:50:00 6444-web-01 PackageKit[13736]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon quit[0m
+Mar 14 13:50:00 6444-web-01 systemd[1]: packagekit.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit packagekit.service has successfully entered the 'dead' state.
+Mar 14 13:58:09 6444-web-01 sshd[14223]: [0;1;31m[0;1;39m[0;1;31merror: kex_exchange_identification: client sent invalid protocol identifier "GET / HTTP/1.1"[0m
+Mar 14 13:59:54 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 13:59:55 6444-web-01 polkitd(authority=local)[479]: [0;1;39m[0;1;31m[0;1;39mRegistered Authentication Agent for unix-process:14235:9498266 (system bus name :1.107 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale C.UTF-8)[0m
+Mar 14 14:00:00 6444-web-01 polkitd(authority=local)[479]: [0;1;39m[0;1;31m[0;1;39mUnregistered Authentication Agent for unix-process:14235:9498266 (system bus name :1.107, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale C.UTF-8) (disconnected from bus)[0m
+Mar 14 14:00:00 6444-web-01 polkitd(authority=local)[479]: [0;1;39m[0;1;31m[0;1;39mOperator of unix-process:14235:9498266 FAILED to authenticate to gain authorization for action org.freedesktop.systemd1.manage-units for system-bus-name::1.108 [<unknown>] (owned by unix-user:ubuntu)[0m
+Mar 14 14:00:06 6444-web-01 sudo[14248]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=./4-not_found_page_404[0m
+Mar 14 14:00:06 6444-web-01 sudo[14248]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:00:06 6444-web-01 systemd[1]: Starting Update APT News...
+-- Subject: A start job for unit apt-news.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has begun execution.
+-- 
+-- The job identifier is 9711.
+Mar 14 14:00:06 6444-web-01 systemd[1]: Starting Update the local ESM caches...
+-- Subject: A start job for unit esm-cache.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has begun execution.
+-- 
+-- The job identifier is 9790.
+Mar 14 14:00:07 6444-web-01 systemd[1]: apt-news.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit apt-news.service has successfully entered the 'dead' state.
+Mar 14 14:00:07 6444-web-01 systemd[1]: Finished Update APT News.
+-- Subject: A start job for unit apt-news.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has finished successfully.
+-- 
+-- The job identifier is 9711.
+Mar 14 14:00:07 6444-web-01 dbus-daemon[425]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.109' (uid=0 pid=14602 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+Mar 14 14:00:07 6444-web-01 systemd[1]: Starting PackageKit Daemon...
+-- Subject: A start job for unit packagekit.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has begun execution.
+-- 
+-- The job identifier is 9869.
+Mar 14 14:00:07 6444-web-01 PackageKit[14608]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon start[0m
+Mar 14 14:00:07 6444-web-01 dbus-daemon[425]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Mar 14 14:00:07 6444-web-01 systemd[1]: Started PackageKit Daemon.
+-- Subject: A start job for unit packagekit.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has finished successfully.
+-- 
+-- The job identifier is 9869.
+Mar 14 14:00:07 6444-web-01 systemd[1]: esm-cache.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit esm-cache.service has successfully entered the 'dead' state.
+Mar 14 14:00:07 6444-web-01 systemd[1]: Finished Update the local ESM caches.
+-- Subject: A start job for unit esm-cache.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has finished successfully.
+-- 
+-- The job identifier is 9790.
+Mar 14 14:00:09 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:00:10 6444-web-01 systemd[1]: Stopping A high performance web server and a reverse proxy server...
+-- Subject: A stop job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 10028.
+Mar 14 14:00:10 6444-web-01 systemd[1]: nginx.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has successfully entered the 'dead' state.
+Mar 14 14:00:10 6444-web-01 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+-- Subject: A stop job for unit nginx.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has finished.
+-- 
+-- The job identifier is 10028 and the job result is done.
+Mar 14 14:00:10 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 10028.
+Mar 14 14:00:10 6444-web-01 nginx[14689]: nginx: [emerg] duplicate location "/redirect_me" in /etc/nginx/sites-enabled/default:58
+Mar 14 14:00:10 6444-web-01 nginx[14689]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:00:10 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:00:10 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:00:10 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 10028 and the job result is failed.
+Mar 14 14:00:10 6444-web-01 sudo[14248]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:00:22 6444-web-01 sudo[14690]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 14 14:00:22 6444-web-01 sudo[14690]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:00:22 6444-web-01 sudo[14690]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:01:11 6444-web-01 sudo[14694]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 14 14:01:11 6444-web-01 sudo[14694]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:01:11 6444-web-01 sudo[14694]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:01:59 6444-web-01 sudo[14696]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/nano /etc/nginx/sites-enabled/default[0m
+Mar 14 14:01:59 6444-web-01 sudo[14696]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:02:56 6444-web-01 sudo[14696]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:03:13 6444-web-01 sudo[14700]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 14 14:03:13 6444-web-01 sudo[14700]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:03:13 6444-web-01 sudo[14700]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:03:19 6444-web-01 sudo[14702]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx[0m
+Mar 14 14:03:19 6444-web-01 sudo[14702]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:03:19 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 10107.
+Mar 14 14:03:19 6444-web-01 systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: A start job for unit nginx.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished successfully.
+-- 
+-- The job identifier is 10107.
+Mar 14 14:03:19 6444-web-01 sudo[14702]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:05:13 6444-web-01 PackageKit[14608]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon quit[0m
+Mar 14 14:05:13 6444-web-01 systemd[1]: packagekit.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit packagekit.service has successfully entered the 'dead' state.
+Mar 14 14:08:33 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:08:33 6444-web-01 polkitd(authority=local)[479]: [0;1;39m[0;1;31m[0;1;39mRegistered Authentication Agent for unix-process:14731:9550105 (system bus name :1.114 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale C.UTF-8)[0m
+Mar 14 14:08:35 6444-web-01 polkitd(authority=local)[479]: [0;1;39m[0;1;31m[0;1;39mUnregistered Authentication Agent for unix-process:14731:9550105 (system bus name :1.114, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale C.UTF-8) (disconnected from bus)[0m
+Mar 14 14:08:35 6444-web-01 polkitd(authority=local)[479]: [0;1;39m[0;1;31m[0;1;39mOperator of unix-process:14731:9550105 FAILED to authenticate to gain authorization for action org.freedesktop.systemd1.manage-units for system-bus-name::1.115 [<unknown>] (owned by unix-user:ubuntu)[0m
+Mar 14 14:08:51 6444-web-01 sudo[14745]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=./4-not_found_page_404[0m
+Mar 14 14:08:51 6444-web-01 sudo[14745]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:08:51 6444-web-01 systemd[1]: Starting Update APT News...
+-- Subject: A start job for unit apt-news.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has begun execution.
+-- 
+-- The job identifier is 10186.
+Mar 14 14:08:51 6444-web-01 systemd[1]: Starting Update the local ESM caches...
+-- Subject: A start job for unit esm-cache.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has begun execution.
+-- 
+-- The job identifier is 10265.
+Mar 14 14:08:51 6444-web-01 systemd[1]: apt-news.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit apt-news.service has successfully entered the 'dead' state.
+Mar 14 14:08:51 6444-web-01 systemd[1]: Finished Update APT News.
+-- Subject: A start job for unit apt-news.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has finished successfully.
+-- 
+-- The job identifier is 10186.
+Mar 14 14:08:52 6444-web-01 dbus-daemon[425]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.116' (uid=0 pid=15078 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+Mar 14 14:08:52 6444-web-01 systemd[1]: Starting PackageKit Daemon...
+-- Subject: A start job for unit packagekit.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has begun execution.
+-- 
+-- The job identifier is 10344.
+Mar 14 14:08:52 6444-web-01 PackageKit[15081]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon start[0m
+Mar 14 14:08:52 6444-web-01 dbus-daemon[425]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Mar 14 14:08:52 6444-web-01 systemd[1]: Started PackageKit Daemon.
+-- Subject: A start job for unit packagekit.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has finished successfully.
+-- 
+-- The job identifier is 10344.
+Mar 14 14:08:52 6444-web-01 systemd[1]: esm-cache.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit esm-cache.service has successfully entered the 'dead' state.
+Mar 14 14:08:52 6444-web-01 systemd[1]: Finished Update the local ESM caches.
+-- Subject: A start job for unit esm-cache.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has finished successfully.
+-- 
+-- The job identifier is 10265.
+Mar 14 14:08:54 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:08:54 6444-web-01 sudo[15183]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/tee /var/www/html/404.html[0m
+Mar 14 14:08:54 6444-web-01 sudo[15183]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:08:54 6444-web-01 sudo[15183]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:08:54 6444-web-01 sudo[15185]: [0;1;39m[0;1;31m[0;1;39m    root : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/sed -i s|listen 80 default_server;|listen 80 default_server;\\n\\terror_page 404 /404.html;\\n\\tlocation = /404.html {\\n\\t\\troot /var/www/html;\\n\\t\\tinternal;\\n\\t}| /etc/nginx/sites-available/default[0m
+Mar 14 14:08:54 6444-web-01 sudo[15185]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:08:54 6444-web-01 sudo[15185]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:08:54 6444-web-01 systemd[1]: Stopping A high performance web server and a reverse proxy server...
+-- Subject: A stop job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 10503.
+Mar 14 14:08:54 6444-web-01 systemd[1]: nginx.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has successfully entered the 'dead' state.
+Mar 14 14:08:54 6444-web-01 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+-- Subject: A stop job for unit nginx.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has finished.
+-- 
+-- The job identifier is 10503 and the job result is done.
+Mar 14 14:08:54 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 10503.
+Mar 14 14:08:54 6444-web-01 nginx[15193]: nginx: [emerg] duplicate location "/404.html" in /etc/nginx/sites-enabled/default:58
+Mar 14 14:08:54 6444-web-01 nginx[15193]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:08:54 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:08:54 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:08:54 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 10503 and the job result is failed.
+Mar 14 14:08:54 6444-web-01 sudo[14745]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:09:26 6444-web-01 sudo[15194]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 14 14:09:26 6444-web-01 sudo[15194]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:09:26 6444-web-01 sudo[15194]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:13:25 6444-web-01 sudo[15198]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/vi /etc/nginx/sites-enabled/default[0m
+Mar 14 14:13:25 6444-web-01 sudo[15198]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:13:57 6444-web-01 PackageKit[15081]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon quit[0m
+Mar 14 14:13:57 6444-web-01 systemd[1]: packagekit.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit packagekit.service has successfully entered the 'dead' state.
+Mar 14 14:14:43 6444-web-01 sudo[15198]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:14:46 6444-web-01 sudo[15201]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 14 14:14:46 6444-web-01 sudo[15201]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:14:46 6444-web-01 sudo[15201]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 14:16:29.3173 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: caused by: EC2MetadataError: failed to make EC2Metadata request
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <?xml version="1.0" encoding="iso-8859-1"?>
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:                  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <head>
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <title>404 - Not Found</title>
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </head>
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  <body>
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:   <h1>404 - Not Found</h1>
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:  </body>
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: </html>
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 404, request id:
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]: 2025-03-14 14:16:29.3560 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 075376243625
+Mar 14 14:16:29 6444-web-01 amazon-ssm-agent.amazon-ssm-agent[435]:         status code: 400, request id: 94142689-bd4a-4aec-be08-aab3295e73ab
+Mar 14 14:17:01 6444-web-01 CRON[15203]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 14 14:17:01 6444-web-01 CRON[15204]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 14 14:17:01 6444-web-01 CRON[15203]: pam_unix(cron:session): session closed for user root
+Mar 14 14:18:00 6444-web-01 sudo[15206]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt remove nginx[0m
+Mar 14 14:18:00 6444-web-01 sudo[15206]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:18:04 6444-web-01 dbus-daemon[425]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.120' (uid=0 pid=15256 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+Mar 14 14:18:04 6444-web-01 systemd[1]: Starting PackageKit Daemon...
+-- Subject: A start job for unit packagekit.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has begun execution.
+-- 
+-- The job identifier is 10582.
+Mar 14 14:18:04 6444-web-01 PackageKit[15259]: [0;38;5;245m[0;1;31m[0;38;5;245mdaemon start[0m
+Mar 14 14:18:04 6444-web-01 dbus-daemon[425]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Mar 14 14:18:04 6444-web-01 systemd[1]: Started PackageKit Daemon.
+-- Subject: A start job for unit packagekit.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit packagekit.service has finished successfully.
+-- 
+-- The job identifier is 10582.
+Mar 14 14:18:06 6444-web-01 sudo[15206]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:18:07 6444-web-01 sudo[15304]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt purge nginx[0m
+Mar 14 14:18:07 6444-web-01 sudo[15304]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:18:08 6444-web-01 sudo[15304]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:18:23 6444-web-01 sudo[15350]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/rm -rf /etc/nginx[0m
+Mar 14 14:18:23 6444-web-01 sudo[15350]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:18:23 6444-web-01 sudo[15350]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:18:23 6444-web-01 sudo[15352]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/rm -rf /var/log/nginx[0m
+Mar 14 14:18:23 6444-web-01 sudo[15352]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:18:23 6444-web-01 sudo[15352]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:18:23 6444-web-01 sudo[15354]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/rm -rf /var/cache/nginx[0m
+Mar 14 14:18:23 6444-web-01 sudo[15354]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:18:23 6444-web-01 sudo[15354]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:18:35 6444-web-01 sudo[15356]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt autoremove[0m
+Mar 14 14:18:35 6444-web-01 sudo[15356]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:18:41 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:18:41 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:18:41 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:18:48 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:18:48 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:18:48 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:18:50 6444-web-01 sudo[15356]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:19:44 6444-web-01 sudo[15597]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=./4-not_found_page_404[0m
+Mar 14 14:19:44 6444-web-01 sudo[15597]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:19:44 6444-web-01 systemd[1]: Starting Update APT News...
+-- Subject: A start job for unit apt-news.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has begun execution.
+-- 
+-- The job identifier is 10825.
+Mar 14 14:19:44 6444-web-01 systemd[1]: Starting Update the local ESM caches...
+-- Subject: A start job for unit esm-cache.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has begun execution.
+-- 
+-- The job identifier is 10904.
+Mar 14 14:19:44 6444-web-01 systemd[1]: apt-news.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit apt-news.service has successfully entered the 'dead' state.
+Mar 14 14:19:44 6444-web-01 systemd[1]: Finished Update APT News.
+-- Subject: A start job for unit apt-news.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has finished successfully.
+-- 
+-- The job identifier is 10825.
+Mar 14 14:19:44 6444-web-01 systemd[1]: esm-cache.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit esm-cache.service has successfully entered the 'dead' state.
+Mar 14 14:19:44 6444-web-01 systemd[1]: Finished Update the local ESM caches.
+-- Subject: A start job for unit esm-cache.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has finished successfully.
+-- 
+-- The job identifier is 10904.
+Mar 14 14:19:53 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:19:54 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:19:54 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:19:54 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:19:54 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:19:54 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:19:57 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:19:58 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:19:58 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:19:58 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 11226.
+Mar 14 14:19:58 6444-web-01 nginx[16424]: nginx: [emerg] open() "/etc/nginx/nginx.conf" failed (2: No such file or directory)
+Mar 14 14:19:58 6444-web-01 nginx[16424]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:19:58 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:19:58 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:19:58 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 11226 and the job result is failed.
+Mar 14 14:19:58 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:19:58 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:19:58 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:20:00 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:20:00 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 11386.
+Mar 14 14:20:00 6444-web-01 nginx[16507]: nginx: [emerg] open() "/etc/nginx/nginx.conf" failed (2: No such file or directory)
+Mar 14 14:20:00 6444-web-01 nginx[16507]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:20:00 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:20:00 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:20:00 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 11386 and the job result is failed.
+Mar 14 14:20:00 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 11465.
+Mar 14 14:20:00 6444-web-01 nginx[16515]: nginx: [emerg] open() "/etc/nginx/nginx.conf" failed (2: No such file or directory)
+Mar 14 14:20:00 6444-web-01 nginx[16515]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:20:00 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:20:00 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:20:00 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 11465 and the job result is failed.
+Mar 14 14:20:00 6444-web-01 sudo[15597]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:20:31 6444-web-01 sudo[16516]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 14 14:20:31 6444-web-01 sudo[16516]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:20:31 6444-web-01 sudo[16516]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:21:06 6444-web-01 sudo[16518]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt install nginx[0m
+Mar 14 14:21:06 6444-web-01 sudo[16518]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:21:10 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:21:10 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:21:10 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:21:10 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 11625.
+Mar 14 14:21:10 6444-web-01 nginx[16596]: nginx: [emerg] open() "/etc/nginx/nginx.conf" failed (2: No such file or directory)
+Mar 14 14:21:10 6444-web-01 nginx[16596]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:21:10 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:21:10 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:21:10 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 11625 and the job result is failed.
+Mar 14 14:21:12 6444-web-01 sudo[16518]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:21:43 6444-web-01 sudo[16649]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx[0m
+Mar 14 14:21:43 6444-web-01 sudo[16649]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:21:43 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 11704.
+Mar 14 14:21:43 6444-web-01 nginx[16652]: nginx: [emerg] open() "/etc/nginx/nginx.conf" failed (2: No such file or directory)
+Mar 14 14:21:43 6444-web-01 nginx[16652]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:21:43 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:21:43 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:21:43 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 11704 and the job result is failed.
+Mar 14 14:21:43 6444-web-01 sudo[16649]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:22:12 6444-web-01 sudo[16653]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/dpkg --configure -a[0m
+Mar 14 14:22:12 6444-web-01 sudo[16653]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:22:12 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:22:12 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:22:12 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:22:13 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 11864.
+Mar 14 14:22:13 6444-web-01 nginx[16692]: nginx: [emerg] open() "/etc/nginx/nginx.conf" failed (2: No such file or directory)
+Mar 14 14:22:13 6444-web-01 nginx[16692]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:22:13 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:22:13 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:22:13 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 11864 and the job result is failed.
+Mar 14 14:22:13 6444-web-01 sudo[16653]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:22:19 6444-web-01 sudo[16695]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt install -f[0m
+Mar 14 14:22:19 6444-web-01 sudo[16695]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:22:21 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:22:21 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:22:21 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:22:21 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 12024.
+Mar 14 14:22:21 6444-web-01 nginx[16776]: nginx: [emerg] open() "/etc/nginx/nginx.conf" failed (2: No such file or directory)
+Mar 14 14:22:21 6444-web-01 nginx[16776]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:22:21 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:22:21 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:22:21 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 12024 and the job result is failed.
+Mar 14 14:22:23 6444-web-01 sudo[16695]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:22:30 6444-web-01 sudo[16830]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/systemctl status nginx.service[0m
+Mar 14 14:22:30 6444-web-01 sudo[16830]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:22:43 6444-web-01 sudo[16830]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:22:52 6444-web-01 sudo[16833]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/journalctl -xe[0m
+Mar 14 14:22:52 6444-web-01 sudo[16833]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:23:00 6444-web-01 sudo[16833]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:23:06 6444-web-01 sudo[16836]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt remove --purge nginx[0m
+Mar 14 14:23:06 6444-web-01 sudo[16836]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:23:12 6444-web-01 sudo[16836]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:23:29 6444-web-01 sudo[16873]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=./4-not_found_page_404[0m
+Mar 14 14:23:29 6444-web-01 sudo[16873]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:23:30 6444-web-01 systemd[1]: Starting Update APT News...
+-- Subject: A start job for unit apt-news.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has begun execution.
+-- 
+-- The job identifier is 12103.
+Mar 14 14:23:30 6444-web-01 systemd[1]: Starting Update the local ESM caches...
+-- Subject: A start job for unit esm-cache.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has begun execution.
+-- 
+-- The job identifier is 12182.
+Mar 14 14:23:30 6444-web-01 systemd[1]: apt-news.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit apt-news.service has successfully entered the 'dead' state.
+Mar 14 14:23:30 6444-web-01 systemd[1]: Finished Update APT News.
+-- Subject: A start job for unit apt-news.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has finished successfully.
+-- 
+-- The job identifier is 12103.
+Mar 14 14:23:30 6444-web-01 systemd[1]: esm-cache.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit esm-cache.service has successfully entered the 'dead' state.
+Mar 14 14:23:30 6444-web-01 systemd[1]: Finished Update the local ESM caches.
+-- Subject: A start job for unit esm-cache.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has finished successfully.
+-- 
+-- The job identifier is 12182.
+Mar 14 14:23:32 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:23:32 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:23:33 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:23:33 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 12342.
+Mar 14 14:23:33 6444-web-01 nginx[17333]: nginx: [emerg] open() "/etc/nginx/nginx.conf" failed (2: No such file or directory)
+Mar 14 14:23:33 6444-web-01 nginx[17333]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:23:33 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:23:33 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:23:33 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 12342 and the job result is failed.
+Mar 14 14:23:34 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:23:35 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 12421.
+Mar 14 14:23:35 6444-web-01 nginx[17383]: nginx: [emerg] open() "/etc/nginx/nginx.conf" failed (2: No such file or directory)
+Mar 14 14:23:35 6444-web-01 nginx[17383]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:23:35 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:23:35 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:23:35 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 12421 and the job result is failed.
+Mar 14 14:23:35 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 12500.
+Mar 14 14:23:35 6444-web-01 nginx[17391]: nginx: [emerg] open() "/etc/nginx/nginx.conf" failed (2: No such file or directory)
+Mar 14 14:23:35 6444-web-01 nginx[17391]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:23:35 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:23:35 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:23:35 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 12500 and the job result is failed.
+Mar 14 14:23:35 6444-web-01 sudo[16873]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:23:42 6444-web-01 sudo[17392]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 14 14:23:42 6444-web-01 sudo[17392]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:23:42 6444-web-01 sudo[17392]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:23:59 6444-web-01 sudo[17394]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/nano /etc/nginx/nginx.conf[0m
+Mar 14 14:23:59 6444-web-01 sudo[17394]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:24:09 6444-web-01 sudo[17394]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:24:15 6444-web-01 sudo[17396]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 14 14:24:15 6444-web-01 sudo[17396]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:24:15 6444-web-01 sudo[17396]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:24:22 6444-web-01 sudo[17398]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx[0m
+Mar 14 14:24:22 6444-web-01 sudo[17398]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:24:22 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 12579.
+Mar 14 14:24:22 6444-web-01 nginx[17401]: nginx: [emerg] open() "/etc/nginx/mime.types" failed (2: No such file or directory) in /etc/nginx/nginx.conf:10
+Mar 14 14:24:22 6444-web-01 nginx[17401]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:24:22 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:24:22 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:24:22 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 12579 and the job result is failed.
+Mar 14 14:24:22 6444-web-01 sudo[17398]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:24:29 6444-web-01 sudo[17402]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt remove --purge nginx[0m
+Mar 14 14:24:29 6444-web-01 sudo[17402]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:24:33 6444-web-01 sudo[17402]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:24:45 6444-web-01 sudo[17439]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt autoremove[0m
+Mar 14 14:24:45 6444-web-01 sudo[17439]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:24:46 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:24:46 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:24:46 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:24:46 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 12739.
+Mar 14 14:24:46 6444-web-01 nginx[17519]: nginx: [emerg] open() "/etc/nginx/mime.types" failed (2: No such file or directory) in /etc/nginx/nginx.conf:10
+Mar 14 14:24:46 6444-web-01 nginx[17519]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:24:46 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:24:46 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:24:46 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 12739 and the job result is failed.
+Mar 14 14:24:48 6444-web-01 sudo[17439]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:24:51 6444-web-01 sudo[17572]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt install nginx[0m
+Mar 14 14:24:51 6444-web-01 sudo[17572]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:24:55 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:24:55 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:24:55 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:24:55 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 12899.
+Mar 14 14:24:55 6444-web-01 nginx[17651]: nginx: [emerg] open() "/etc/nginx/mime.types" failed (2: No such file or directory) in /etc/nginx/nginx.conf:10
+Mar 14 14:24:55 6444-web-01 nginx[17651]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:24:55 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:24:55 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:24:55 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 12899 and the job result is failed.
+Mar 14 14:24:57 6444-web-01 sudo[17572]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:25:24 6444-web-01 sudo[17704]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt --fix-broken install[0m
+Mar 14 14:25:24 6444-web-01 sudo[17704]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:25:25 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:25:25 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:25:25 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:25:25 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 13059.
+Mar 14 14:25:25 6444-web-01 nginx[17783]: nginx: [emerg] open() "/etc/nginx/mime.types" failed (2: No such file or directory) in /etc/nginx/nginx.conf:10
+Mar 14 14:25:25 6444-web-01 nginx[17783]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:25:25 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:25:25 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:25:25 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 13059 and the job result is failed.
+Mar 14 14:25:27 6444-web-01 sudo[17704]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:25:33 6444-web-01 sudo[17836]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/wget -O /etc/nginx/mime.types https://raw.githubusercontent.com/nginx/nginx/master/conf/mime.types[0m
+Mar 14 14:25:33 6444-web-01 sudo[17836]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:25:33 6444-web-01 sudo[17836]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:25:47 6444-web-01 sudo[17839]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt remove --purge nginx nginx-core nginx-common[0m
+Mar 14 14:25:47 6444-web-01 sudo[17839]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:25:48 6444-web-01 sudo[17839]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:26:20 6444-web-01 sudo[17875]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt autoremove[0m
+Mar 14 14:26:20 6444-web-01 sudo[17875]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:26:21 6444-web-01 systemd[1]: Reloading.
+Mar 14 14:26:21 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mConfiguration file /run/systemd/system/netplan-ovs-cleanup.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.[0m
+Mar 14 14:26:21 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185m/lib/systemd/system/snapd.service:23: Unknown key name 'RestartMode' in section 'Service', ignoring.[0m
+Mar 14 14:26:22 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 13219.
+Mar 14 14:26:22 6444-web-01 systemd[1]: Started A high performance web server and a reverse proxy server.
+-- Subject: A start job for unit nginx.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished successfully.
+-- 
+-- The job identifier is 13219.
+Mar 14 14:26:23 6444-web-01 sudo[17875]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:26:32 6444-web-01 sudo[18008]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/rm -rf /etc/nginx[0m
+Mar 14 14:26:32 6444-web-01 sudo[18008]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:26:32 6444-web-01 sudo[18008]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:26:39 6444-web-01 sudo[18010]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt update[0m
+Mar 14 14:26:39 6444-web-01 sudo[18010]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:26:39 6444-web-01 systemd[1]: Starting Update APT News...
+-- Subject: A start job for unit apt-news.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has begun execution.
+-- 
+-- The job identifier is 13298.
+Mar 14 14:26:39 6444-web-01 systemd[1]: Starting Update the local ESM caches...
+-- Subject: A start job for unit esm-cache.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has begun execution.
+-- 
+-- The job identifier is 13377.
+Mar 14 14:26:39 6444-web-01 systemd[1]: apt-news.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit apt-news.service has successfully entered the 'dead' state.
+Mar 14 14:26:39 6444-web-01 systemd[1]: Finished Update APT News.
+-- Subject: A start job for unit apt-news.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit apt-news.service has finished successfully.
+-- 
+-- The job identifier is 13298.
+Mar 14 14:26:39 6444-web-01 systemd[1]: esm-cache.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit esm-cache.service has successfully entered the 'dead' state.
+Mar 14 14:26:39 6444-web-01 systemd[1]: Finished Update the local ESM caches.
+-- Subject: A start job for unit esm-cache.service has finished successfully
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit esm-cache.service has finished successfully.
+-- 
+-- The job identifier is 13377.
+Mar 14 14:26:41 6444-web-01 sudo[18010]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:26:41 6444-web-01 sudo[18425]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/apt install nginx[0m
+Mar 14 14:26:41 6444-web-01 sudo[18425]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:26:42 6444-web-01 sudo[18425]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:26:54 6444-web-01 sudo[18472]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/sbin/nginx -t[0m
+Mar 14 14:26:54 6444-web-01 sudo[18472]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:26:54 6444-web-01 sudo[18472]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:27:01 6444-web-01 sudo[18474]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx[0m
+Mar 14 14:27:01 6444-web-01 sudo[18474]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
+Mar 14 14:27:01 6444-web-01 systemd[1]: Stopping A high performance web server and a reverse proxy server...
+-- Subject: A stop job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 13456.
+Mar 14 14:27:01 6444-web-01 systemd[1]: nginx.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has successfully entered the 'dead' state.
+Mar 14 14:27:01 6444-web-01 systemd[1]: Stopped A high performance web server and a reverse proxy server.
+-- Subject: A stop job for unit nginx.service has finished
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A stop job for unit nginx.service has finished.
+-- 
+-- The job identifier is 13456 and the job result is done.
+Mar 14 14:27:01 6444-web-01 systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: A start job for unit nginx.service has begun execution
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has begun execution.
+-- 
+-- The job identifier is 13456.
+Mar 14 14:27:01 6444-web-01 nginx[18478]: nginx: [emerg] open() "/etc/nginx/nginx.conf" failed (2: No such file or directory)
+Mar 14 14:27:01 6444-web-01 nginx[18478]: nginx: configuration file /etc/nginx/nginx.conf test failed
+Mar 14 14:27:01 6444-web-01 systemd[1]: [0;1;39m[0;1;31m[0;1;39mnginx.service: Control process exited, code=exited, status=1/FAILURE[0m
+-- Subject: Unit process exited
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- An ExecStartPre= process belonging to unit nginx.service has exited.
+-- 
+-- The process' exit code is 'exited' and its exit status is 1.
+Mar 14 14:27:01 6444-web-01 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnginx.service: Failed with result 'exit-code'.[0m
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- The unit nginx.service has entered the 'failed' state with result 'exit-code'.
+Mar 14 14:27:01 6444-web-01 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: A start job for unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://www.ubuntu.com/support
+-- 
+-- A start job for unit nginx.service has finished with a failure.
+-- 
+-- The job identifier is 13456 and the job result is failed.
+Mar 14 14:27:01 6444-web-01 sudo[18474]: pam_unix(sudo:session): session closed for user root
+Mar 14 14:27:15 6444-web-01 sudo[18479]: [0;1;39m[0;1;31m[0;1;39m  ubuntu : TTY=pts/0 ; PWD=/home/ubuntu/alu-system_engineering-devops/web_server ; USER=root ; COMMAND=/usr/bin/journalctl -xe[0m
+Mar 14 14:27:15 6444-web-01 sudo[18479]: pam_unix(sudo:session): session opened for user root by ubuntu(uid=0)
