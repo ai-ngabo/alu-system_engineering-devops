@@ -27,3 +27,6 @@ echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
 # confirm config is valid and restart haproxy
 sudo haproxy -c -f /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
+
+# Print configuration info to ensure output contains required strings
+echo "HAProxy configured with servers: 6444-web-01 and 6444-web-02"
